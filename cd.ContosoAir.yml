@@ -41,6 +41,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
+    azureSubscription: 'MIPDG--lod47769382(74941d92-3163-4564-bcde-9aed12771946)'
     appType: 'webApp'
-    WebAppName: '$(web_prefix)-$(web_site)-$(web_environment)'
+    WebAppName: 'student1-28134859-ContosoAir-prod'
     packageForLinux: '$(Pipeline.Workspace)/**/*.zip'
