@@ -14,8 +14,7 @@ resources:
      branches:
       include:
        - master
-pool:
-  vmImage: ubuntu-latest
+
 
 steps:
 - task: DownloadPipelineArtifact@2
