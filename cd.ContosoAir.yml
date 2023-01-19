@@ -43,5 +43,5 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'MIPDG--lod47769382(74941d92-3163-4564-bcde-9aed12771946)'
     appType: 'webApp'
-    WebAppName: 'student1-28134859-ContosoAir-prod'
+    WebAppName: '$(web_prefix)-$(web_site)-$(web_environment)'
     packageForLinux: '$(Pipeline.Workspace)/**/*.zip'
